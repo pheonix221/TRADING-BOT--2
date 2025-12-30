@@ -6,3 +6,4 @@ oauth2client
 pandas
 SmartApi-python
 logzero
+websocket
