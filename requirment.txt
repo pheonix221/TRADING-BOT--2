@@ -1,0 +1,7 @@
+requests
+pytz
+pyotp
+gspread
+oauth2client
+pandas
+SmartApi-python
