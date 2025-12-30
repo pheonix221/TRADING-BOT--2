@@ -25,7 +25,7 @@ EXCHANGE = "NSE"
 # ================= LOGIN DETAILS (MANUAL) =================
 API_KEY = "RZFN84RY"
 CLIENT_CODE = "AAAA624603"
-PASSWORD = "832P"
+PASSWORD = "8320"
 TOTP_SECRET = "23HF32I3BXUB74NY6PZNLC7F3I"
 # ==========================================================
 
