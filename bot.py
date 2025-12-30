@@ -9,13 +9,13 @@ IST = pytz.timezone("Asia/Kolkata")
 
 # ================= USER CONFIG =================
 SYMBOL = "IDEA-EQ"
-TOKEN = "99926000"
+TOKEN = "14366"
 SIDE = "BUY"            # BUY or SELL
 QTY = 1
 
-LIMIT_PRICE = 15.00
-TARGET_PRICE = 15.12
-STOPLOSS_PRICE = 14.85
+LIMIT_PRICE = 12.05
+TARGET_PRICE = 12.18
+STOPLOSS_PRICE = 11.00
 
 MAX_RETRIES = 5
 RETRY_INTERVAL = 300    # 5 minutes
