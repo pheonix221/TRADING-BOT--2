@@ -16,6 +16,8 @@ QTY = 1
 LIMIT_PRICE = 12.05
 TARGET_PRICE = 12.18
 STOPLOSS_PRICE = 11.00
+ TARGET_POINTS = round(TARGET_PRICE - LIMIT_PRICE, 2)
+ STOPLOSS_POINTS = round(LIMIT_PRICE - STOPLOSS_PRICE, 2)
 
 MAX_RETRIES = 5
 RETRY_INTERVAL = 300    # 5 minutes
@@ -55,9 +57,9 @@ def place_robo_order(api):
         "producttype": "INTRADAY",
         "duration": "DAY",
         "price": LIMIT_PRICE,
-        "squareoff": round(abs(TARGET_PRICE - LIMIT_PRICE), 2),
-        "stoploss": round(abs(LIMIT_PRICE - STOPLOSS_PRICE), 2),
-        "quantity": QTY
+        "quantity": QTY,
+        "squareoff": TARGET_POINTS,
+        "stoploss": STOPLOSS_POINTS,
     })
 
 
